@@ -2,95 +2,97 @@
 layout: default
 title: Introduction
 nav_order: 1
-description: "Just the Docs is a responsive Jekyll theme with built-in search that is easily customizable and hosted on GitHub Pages."
+has_children: false
 permalink: /
 ---
 
+{: .fs-6 .fw-300 }
+
 # Introduction
+{: .no_toc }
 
 ---
 
-## Getting started
+This document will walk you through how to write and test code in Python, using Pycharm, an integrated development environment created by JetBrains. 
 
-### Dependencies
-
-Just the Docs is built for [Jekyll](https://jekyllrb.com), a static site generator. View the [quick start guide](https://jekyllrb.com/docs/) for more information. Just the Docs requires no special plugins and can run on GitHub Pages' standard Jekyll compiler. The [Jekyll SEO Tag plugin](https://github.com/jekyll/jekyll-seo-tag) is included by default (no need to run any special installation) to inject SEO and open graph metadata on docs pages. For information on how to configure SEO and open graph metadata visit the [Jekyll SEO Tag usage guide](https://jekyll.github.io/jekyll-seo-tag/usage/).
-
-### Quick start: Use as a GitHub Pages remote theme
-
-1. Add Just the Docs to your Jekyll site's `_config.yml` as a [remote theme](https://blog.github.com/2017-11-29-use-any-theme-with-github-pages/)
-
-```yaml
-remote_theme: just-the-docs/just-the-docs
-```
-
-<small>You must have GitHub Pages enabled on your repo, one or more Markdown files, and a `_config.yml` file. [See an example repository](https://github.com/pmarsceill/jtd-remote)</small>
-
-### Local installation: Use the gem-based theme
-
-1. Install the Ruby Gem
-  ```bash
-  $ gem install just-the-docs
-  ```
-  ```yaml
-  # .. or add it to your your Jekyll site’s Gemfile
-  gem "just-the-docs"
-  ```
-
-2. Add Just the Docs to your Jekyll site’s `_config.yml`
-  ```yaml
-  theme: "just-the-docs"
-  ```
-
-3. _Optional:_ Initialize search data (creates `search-data.json`)
-  ```bash
-  $ bundle exec just-the-docs rake search:init
-  ```
-
-3. Run you local Jekyll server
-  ```bash
-  $ jekyll serve
-  ```
-  ```bash
-  # .. or if you're using a Gemfile (bundler)
-  $ bundle exec jekyll serve
-  ```
-
-4. Point your web browser to [http://localhost:4000](http://localhost:4000)
-
-If you're hosting your site on GitHub Pages, [set up GitHub Pages and Jekyll locally](https://help.github.com/en/articles/setting-up-your-github-pages-site-locally-with-jekyll) so that you can more easily work in your development environment.
-
-### Configure Just the Docs
-
-- [See configuration options]({{ site.baseurl }}{% link docs/configuration.md %})
+We will also show you how to push your code to a GitHub repository to allow others to view and collaborate with your project.
 
 ---
 
-## About the project
+### Table of contents
+{: .no_toc .text-delta }
+* TOC
+{:toc}
 
-Just the Docs is &copy; 2017-{{ "now" | date: "%Y" }} by [Patrick Marsceill](http://patrickmarsceill.com).
+---
 
-### License
+## Intended Users
 
-Just the Docs is distributed by an [MIT license](https://github.com/just-the-docs/just-the-docs/tree/main/LICENSE.txt).
+This document is intended for intermediate developers who already have a basic understanding of programming (even if it is in a language other than python). These users should know the following:
 
-### Contributing
+* how to install Pycharm,
+* understand how to identify all the disjointed equivalencies for a function and,
+* basic understanding of GitHub
 
-When contributing to this repository, please first discuss the change you wish to make via issue,
-email, or any other method with the owners of this repository before making a change. Read more about becoming a contributor in [our GitHub repo](https://github.com/just-the-docs/just-the-docs#contributing).
+---
 
-#### Thank you to the contributors of Just the Docs!
+## Software Versions
 
-<ul class="list-style-none">
-{% for contributor in site.github.contributors %}
-  <li class="d-inline-block mr-1">
-     <a href="{{ contributor.html_url }}"><img src="{{ contributor.avatar_url }}" width="32" height="32" alt="{{ contributor.login }}"/></a>
-  </li>
-{% endfor %}
-</ul>
+This guide uses Python version 3.10.4 and PyCharm version: 2021.3.3 and git version 2.35.1. on a Mac OS system. 
 
-### Code of Conduct
+If you do not have Python installed, down the required version [here](https://www.python.org/downloads/release/python-3104/).
 
-Just the Docs is committed to fostering a welcoming community.
+If you do not have PyCharm, download the latest version [here](https://www.jetbrains.com/pycharm/download/#section=windows). 
 
-[View our Code of Conduct](https://github.com/just-the-docs/just-the-docs/tree/main/CODE_OF_CONDUCT.md) on our GitHub repository.
+For the latest version of git, download [here](https://git-scm.com/download/mac).
+
+---
+
+## Prerequisites
+
+To follow along with this document, you will need the following: 
+
+- access to a computer with a keyboard and mouse,
+- git installed on your device (often times mac and linux devices have it preinstalled)
+- Python installed
+- a JetBrains license 
+    - (free for students and faculty by following this link: https://www.jetbrains.com/student/)
+- PyCharm installed
+- a GitHub account
+- an internet connection, and
+- a general understanding of basic computer tasks.
+
+---
+
+## Brief History
+Python was conceived in the late 1980s by Guido van Rossum at Centrum Wiskunde & Informatica (CWI) in the Netherlands as a successor to the ABC programming language, which was inspired by SETL, capable of _exception handling_ and _interfacing with the Amoeba operating system_.
+
+Its implementation began in December 1989.
+
+---
+
+## Typographical Conventions
+
+These instructions use the following typographic conventions.
+
+| Convention                           | Typeface      | Examples                                         |
+| :----                                | :----         | :----                                            |
+| Command line commands and user input |   ```Light``` |     ```pwd```, ```ls```, ```cd```, ```sudo```    |
+| Specific keystrokes                  |   **[Bold]**  |     **[Enter]**, **[Esc]**, **[Ctrl]**, **[F4]** |
+| Console output                       |   *`code`*    |     *`/c/Users/Don/Desktop`*                     |
+| Key terms and emphasis               |   _Italics_   |     _Root user_, _Kernel_, _Pathname_            |
+
+<br />
+
+![Note icon](https://github.com/dl90/linux-basics/blob/gh-pages/docs/images/icons/note.png?raw=true "Note"){: style="float: left" }
+>> **Note**: This is a note icon which indicates please pay attention to the following.
+<br />
+<br />
+
+![Caution icon](https://github.com/dl90/linux-basics/blob/gh-pages/docs/images/icons/caution.png?raw=true "Caution"){: style="float: left" }
+>> **Caution**: This a caution icon which indicates please be careful with the following.
+
+---
+
+## Conclusion
+Python is a beginner friendly language, as its syntax is more succinct and intuitive than other popular languages such as Java, C, or C++. However, even though it is beginner friendly, it is powerful enough for website and software development, task automation, data analysis, and data visualization. Due to the simple syntax and the capabilities of the language, in the past few years it has come to be one of the world’s most widely used programming languages. By following along with this document, we will introduce you to the basic operations that are recognized as industry standards. We suggest that you start with learning to code a basic function.

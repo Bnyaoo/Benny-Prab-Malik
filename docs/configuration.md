@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Task 1
+title: Writing a basic function
 nav_order: 2
 ---
 

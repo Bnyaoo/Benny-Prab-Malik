@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Task 3
+title: Creating and Pushing a Project to a GitHub Repository 
 nav_order: 4
 ---
 

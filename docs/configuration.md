@@ -13,7 +13,7 @@ permalink: /docs/navigating
 
 ---
 
-Python is capable of programming many tasks, but before we can create our own projects we need to learn the basics. This section of the guide will walk you through how to create a basic palindrome function and run the file in the command line. We want to help you develop good programming habits, so we will guide you through how to write comments, docstrings and doctests to ensure your code is able to detect a palindrome word.
+Python is capable of programming many tasks, but before we can create our own projects we need to learn the basics. This section of the guide will walk you through how to create a basic palindrome function and run the file in the command line. We want to help you develop good programming habits, so we will guide you through how to comment and document your code to ensure it is able to correctly detect a palindrome string.
 
 ---
 

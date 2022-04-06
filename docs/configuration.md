@@ -101,7 +101,7 @@ One of the most common introduction problems that developers solve is determinin
 <br />
 
 ~~~
->import sys  # allows us to use command line arguments
+import sys  # allows us to use command line arguments
 
 
 def palindrome(word):
@@ -139,6 +139,7 @@ if __name__ == "__main__":
 ~~~
 
 <br />
+>The file should now look like the image below.
 <br />
 
 ![img7](https://user-images.githubusercontent.com/90500768/161904702-c28a9bf6-6f68-476e-becc-9f5d6964727e.png?raw=true "Completed Code")
@@ -146,8 +147,32 @@ if __name__ == "__main__":
 <br />
 <br />
 
-You now know how to open the terminal and input commands which allow you to navigate through your system. 
+**8.** Press the terminal button at the bottom of the screen.
+![img8](https://user-images.githubusercontent.com/90500768/161905803-f880011b-0aab-439c-aac1-9284e71c95b8.png?raw=true "Open Terminal")
 
-Now you are able to see files in your directories as well as your current directory, allowing you to easily navigate through your system.
+<br />
+<br />
 
-The next step is to learn how to [create users and assign privileges.](https://dl90.github.io/linux-basics/docs/users)
+**9.** Type the following command.
+>![Note icon](https://github.com/dl90/linux-basics/blob/gh-pages/docs/images/icons/note.png?raw=true "Note"){: style="float: left" }
+>> **Note**: The string `bob` below can be replaced with any string of your choice.
+<br />
+>```
+>python main.py bob
+>```
+![img9](https://user-images.githubusercontent.com/90500768/161905959-bffa6619-36f1-4b1a-baab-d99158542d56.png?raw=true "Type Command")
+
+<br />
+<br />
+
+**10.** Press the [enter] key to run the command
+>The command in step 9 should return true like the image below.
+<br />
+![img10](https://user-images.githubusercontent.com/90500768/161906102-82d40917-c91a-414d-a070-4cdcf2a70ab9.png?raw=true "Enter Command")
+
+<br />
+<br />
+
+Now that the code is complete you can repeat steps 9 and 10, but with a new string to execute your program.
+
+The next step is to learn how to unit test your program.

@@ -38,7 +38,7 @@ This document is intended for intermediate developers who already have a basic u
 
 ## Software Versions
 
-This guide uses Python version 3.10.4 and PyCharm version: 2021.3.3 and git version 2.35.1. on a Mac OS system. 
+This guide uses Python version 3.10.4 and PyCharm version: 2021.3.3 and git version 2.35.1. on a Windows 10 system. 
 
 If you do not have Python installed, download the required version [here](https://www.python.org/downloads/release/python-3104/).
 

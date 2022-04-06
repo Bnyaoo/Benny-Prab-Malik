@@ -1,10 +1,10 @@
 ---
 layout: default
-title: Navigation Structure
+title: Troubleshooting guide 
 nav_order: 5
 ---
 
-# Navigation Structure
+# Troubleshooting guide 
 
 {: .no_toc }
 

@@ -67,9 +67,9 @@ A commit, or "revision", is an individual change to a file (or set of files). Wh
 
 **6.** After selecting the files to publish to our GitHub repository, include a commit message to give context about a change to the repository for fellow developers.
 
-![6](https://user-images.githubusercontent.com/18428358/161926562-2727f9ad-6037-4f2d-a6d1-2f251e67eb29.png?raw=true)
-
 Click the text field to type your commit message.
+
+![6](https://user-images.githubusercontent.com/18428358/161926562-2727f9ad-6037-4f2d-a6d1-2f251e67eb29.png?raw=true)
 
 <br />
 <br />

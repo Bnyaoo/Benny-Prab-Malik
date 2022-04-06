@@ -65,7 +65,7 @@ One of the most common introduction problems that developers solve is determinin
 <br />
 <br />
 
-**3.** Delete the highlighted section with “palinedromeProject” and confirm that the “create a main.py welcome script” is checked off.
+**3.** Delete the highlighted section with “palinedromeProject” and confirm that the “create a main.py welcome script” is selected.
 
 >![img3_pt1](https://user-images.githubusercontent.com/90500768/161901437-1346111d-1d50-4d18-a2f1-8293cb180ddd.png?raw=true "Set uUp New Project")
 <br />

@@ -1,85 +1,74 @@
-<p align="right">
-    <a href="https://badge.fury.io/rb/just-the-docs"><img src="https://badge.fury.io/rb/just-the-docs.svg" alt="Gem version"></a> <a href="https://github.com/just-the-docs/just-the-docs/actions?query=workflow%3A%22main+branch+CI%22"><img src="https://github.com/just-the-docs/just-the-docs/workflows/main%20branch%20CI/badge.svg" alt="Build status"></a>
-</p>
-<br><br>
-<p align="center">
-    <h1 align="center">Just the Docs</h1>
-    <p align="center">A modern, highly customizable, and responsive Jekyll theme for documentation with built-in search.<br>Easily hosted on GitHub Pages with few dependencies.</p>
-    <p align="center"><strong><a href="https://just-the-docs.github.io/just-the-docs/">See it in action!</a></strong></p>
-    <br><br><br>
-</p>
+# Overview of Python Basics
 
-![jtd](https://user-images.githubusercontent.com/896475/47384541-89053c80-d6d5-11e8-98dc-dba16e192de9.gif)
+Welcome! 👋 This documentation will guide you through writing and testing code in Python, using Pycharm, an integrated development environment created by JetBrains.
 
-## Installation
+The goal of this documentation is to provide you with enough information to build your first Python project with unit tests. We will also show you hoq to publish your project to a GitHub repository.
 
-### via GitHub Pages remote theme
+These are the topics of this document
 
-The quickiest way to use Just The Docs is to use GitHub pages [remote theme](https://blog.github.com/2017-11-29-use-any-theme-with-github-pages/) feature in your `config.yml` file:
+- Writing a Basic Function
+- Writing a Unit Test
+- Creating and Pushing a Project to a GitHub Repositor
 
-```yaml
-remote_theme: just-the-docs/just-the-docs
-```
-### via RubyGems:
+## How We Collaborated Together
 
-Alternatively you can install it as a Ruby Gem.
+This user manual is the collaborative effort of our technical communications group. Our two main forms of communication were in person meetings and instant messaging over Discord.
 
-Add this line to your Jekyll site's Gemfile:
+We used Git and GitHub to collaborate on the implementation of this document. With every new page, we would create a new branch to keep our work separate until we were ready to merge to the master branch.
 
-```ruby
-gem "just-the-docs"
-```
+## How We Created Our Guide
 
-And add this line to your Jekyll site's `_config.yml`:
+Our guide was created using our knowledge from creating, testing, and deploying projects to GitHub repositories in COMP 1510 Programming Methods. We referenced the official [Python documentation](https://www.python.org/doc/) to supplement our experiential knowledge. We reflected on the difficulties we had encountered while working with Python and Pycharm to keep our instructions clear, complete, and concise.
 
-```yaml
-theme: just-the-docs
-```
+### Using Markdown
 
-And then execute:
+This was the first time writing extensively in markdown for all of our group members. We learned how to style text using markdown from our COMM 2116 Business Communications 2 and developed our skills over the course of writing this documentation.
 
-    $ bundle
+### Using PyCharm
 
-Or install it yourself as:
+We used PyCharm to create images to accompany our instructions. Working extensively with the PyCharm IDE in COMP 1510 Programming Methods allowed us to create clear instructions informed by difficulties we encountered using PyCharm initially.
 
-    $ gem install just-the-docs
+### Learning Best Practices For Web Writing
 
-Alternatively, you can run it inside Docker while developing your site
+In addition to user guides, developers also write documentation for their peers and company stakeholders. Most of this writing exists in a web format. As such, it is important to construct documents that maximize readability on the web.
 
-    $ docker-compose up
+#### Readability
 
-## Usage
+People read technical writing to retrieve information and not for pleasure (typically). We streamlined our writing to be clear, concise, and complete to provide the necessary information as effectively as possible. 
 
-[View the documentation](https://just-the-docs.github.io/just-the-docs/) for usage information.
+We ensured that every procedure page had an overview that would give the reader a preview of the topic before going through the detailed steps. At the end, we included a conclusion to summarize what the reader would have accomplished from following the guide.
 
-## Contributing
+We used admonitions to highlight any information we wanted to stand out to the reader.
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/just-the-docs/just-the-docs. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
+![Note icon](https://github.com/dl90/linux-basics/blob/gh-pages/docs/images/icons/note.png?raw=true "Note"){: style="float: left" }
+>> **Note**: This is a note icon which indicates please pay attention to the following.
+<br />
+<br />
 
-### Submitting code changes:
+![Caution icon](https://github.com/dl90/linux-basics/blob/gh-pages/docs/images/icons/caution.png?raw=true "Caution"){: style="float: left" }
+>> **Caution**: This a caution icon which indicates please be careful with the following.
 
-- Open a [Pull Request](https://github.com/just-the-docs/just-the-docs/pulls)
-- Ensure all CI tests pass
-- Await code review
-- Bump the version number in `just-the-docs.gemspec` and `package.json` according to [semantic versioning](https://semver.org/).
+#### Chunking
 
-### Design and development principles of this theme:
+Due to the nature of our topic, we anticipated long informative pages. This can easily become difficult for a reader to follow. Knowing this, we focused on using sub-headings and figures to guide the reader.
 
-1. As few dependencies as possible
-2. No build script needed
-3. First class mobile experience
-4. Make the content shine
+We achose a navigation style that ]shows the subheadings for the current page as nested links. This allows our reader to gauge the relevancy of the material and to jump to a specific section if they desired.
 
-## Development
+#### Tone
 
-To set up your environment to develop this theme, run `bundle install`.
+This documentation is intended for the following users who are searching for a clear guide to create a Python function and its associated unit tests to form a cohesive project to be hosted in a GitHub repository:
 
-A modern [devcontainer configuration](https://code.visualstudio.com/docs/remote/containers) for VSCode is included.
+- CST term 2 students without prior experience with Python and PyCharm.
+- Self taught software developers looking to create better documentation for their Python projects.
 
-Your theme is set up just like a normal Jekyll site! To test your theme, run `bundle exec jekyll serve` and open your browser at `http://localhost:4000`. This starts a Jekyll server using your theme. Add pages, documents, data, etc. like normal to test your theme's contents. As you make modifications to your theme and to your content, your site will regenerate and you should see the changes in the browser after a refresh, just like normal.
+Therefore, we chose to write in a casual tone as if we were explaining to a peer. We kept the jargon to a minimal as we did not want to confuse any beginner coders. Any technical terminology is included in the glossary if the reader needs clarity on a term.
 
-When the theme is released, only the files in `_layouts`, `_includes`, and `_sass` tracked with Git will be released.
+## Conclusion
 
-## License
+This documentation recorded our understanding of Python, PyCharm, and GitHub. The main challenge we encountered writing about these topics was editing our work to explain these concepts in an approachable and digestible way to meet the needs of someone without much experience with the toolchain used in this document.
 
-The theme is available as open source under the terms of the [MIT License](http://opensource.org/licenses/MIT).
+Writing this documentation presented us the opportunity to practice writing clear instructions for our intended audience to read off the web.
+
+This project tested our group's ability to communicate. As a group, we had an open line of communication where we regularly updated each other on our progress. Through teamwork, we helped each other meet deadlines and adhere to a single writing style.
+
+Thank you for your interest in our Python Basics user manual. We hope this document serves as a good reference for our readers and for ourselves in future projects. 

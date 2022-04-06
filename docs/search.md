@@ -79,7 +79,7 @@ Click the text field to type your commit message.
 ![7](https://user-images.githubusercontent.com/18428358/161926852-6ad97f97-0936-4615-baaa-4f729ef03925.png?raw=true)
 
 <br />
->Now that the project files have been committed and pushed, you will need to create a GitHub repository to house the files.
+Now that the project files have been committed and pushed, you will need to create a GitHub repository to house the files.
 <br />
 
 ## Creating a GitHub Repository
@@ -89,7 +89,7 @@ Click the text field to type your commit message.
 ![8](https://user-images.githubusercontent.com/18428358/161927434-591a32bb-9764-4b30-954c-458aaae5e1fd.png?raw=true)
 
 <br />
->A window will appear where you can give the repository a name, remote, and description.
+A window will appear where you can give the repository a name, remote, and description.
 <br />
 
 **9.** Click the text box next to “Repository name” and set the name for this project.
@@ -101,7 +101,7 @@ Click the text field to type your commit message.
 
 **Optional** You can also choose to make your GitHub repository private so only authorized users can access your project.
 
->To do so, click the box next to “Private”.
+To do so, click the box next to “Private”.
 
 ![10](https://user-images.githubusercontent.com/18428358/161927782-d94ad57a-af3e-4d59-9826-ac8e237973db.png?raw=true)
 
@@ -110,7 +110,7 @@ Click the text field to type your commit message.
 
 **10.** After providing a name for the repository, we are ready to publish the project on GitHub.
 
->Click the “Share” button when you’re ready to upload your project.
+Click the “Share” button when you’re ready to upload your project.
 
 ![11](https://user-images.githubusercontent.com/18428358/161928104-97d2b523-3c45-463e-9416-f71cfea15c45.png?raw=true)
 

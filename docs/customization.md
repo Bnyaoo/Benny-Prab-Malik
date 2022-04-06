@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Writing a Unit test
+title: Writing a Unit Test
 nav_order: 3
 has_children: false
 permalink: /docs/customization

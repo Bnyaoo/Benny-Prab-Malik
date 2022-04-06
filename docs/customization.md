@@ -67,7 +67,10 @@ Unit testing is a technique in which particular module is tested to check by dev
 
 **6.** Add this line of code on line number 2 which will be grayed out upon writing it down, for now.
 
->from main import palindrome as palindrome
+~~~
+from main import palindrome as palindrome
+
+~~~
 
 This line of code is calling the palindrome function from main.py.
 
@@ -85,7 +88,8 @@ This line of code is calling the palindrome function from main.py.
 
 **8.** Type the following blocks of code starting at line 6.
 
->def test_palindrome_with_all_lower_case(self):
+~~~
+    def test_palindrome_with_all_lower_case(self):
         expected = True
         actual = palindrome("civic")
         self.assertEqual(expected, actual)
@@ -99,6 +103,8 @@ This line of code is calling the palindrome function from main.py.
         expected = False
         actual = palindrome("abc")
         self.assertEqual(expected, actual)
+        
+~~~
         
 After adding these lines of code, the whole testing file should look like the image provided below.
 

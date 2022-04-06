@@ -96,7 +96,7 @@ One of the most common introduction problems that developers solve is determinin
 >> **Note**: Ensure that each block statement is indented (ex. Everything inside function is indented once, everything inside an if statement is indented 1 level further)
 <br />
 <br />
-
+>
 ~~~
 import sys  # allows us to use command line arguments
 
@@ -134,8 +134,7 @@ if __name__ == "__main__":
     main()
 
 ~~~
-
-<br />
+>
 >The file should now look like the image below.
 <br />
 
@@ -155,16 +154,13 @@ if __name__ == "__main__":
 **9.** Type the following command.
 <br />
 >![Note icon](https://github.com/dl90/linux-basics/blob/gh-pages/docs/images/icons/note.png?raw=true "Note"){: style="float: left" }
-><br />
 >> **Note**: The string `bob` below can be replaced with any string of your choice.
-<br />
 <br />
 <br />
 >```
 >python main.py bob
 >```
 
-<br />
 <br />
 >![img9](https://user-images.githubusercontent.com/90500768/161905959-bffa6619-36f1-4b1a-baab-d99158542d56.png?raw=true "Type Command")
 

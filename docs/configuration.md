@@ -178,4 +178,4 @@ if __name__ == "__main__":
 
 Now that the code is complete you can repeat steps 9 and 10, but with a new string to execute your program.
 
-Once you have completed this section of the guide, you should be able to successfully create a new project and execute your code in the terminal. With some extra practice you can learn to create your own function. The next step for learning the Python basics is to learn how to [unit test your code.](./docs/customization.md)
+Once you have completed this section of the guide, you should be able to successfully create a new project and execute your code in the terminal. With some extra practice you can learn to create your own function. The next step for learning the Python basics is to learn how to [unit test your code.](https://bnyaoo.github.io/Benny-Prab-Malik/docs/customization)

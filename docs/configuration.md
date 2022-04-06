@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Navigating the File System
+title: Writing a Basic Function
 nav_order: 2
 has_children: false
 permalink: /docs/navigating
@@ -24,26 +24,12 @@ Python is capable of programming many tasks, but before we can create our own pr
 
 ---
 
-## What are Commands
+## Things You Should Pay Attention To:
 
-Commands are instructions the operating system uses to perform specific tasks. Instructions provide a _layer of abstraction_ and make using a computer easy without the need to know how things work.
-
-You can think of commands as _keywords_ _mapped_ to a mini-program that executes when you input _keywords_ into a _terminal_.
-
-Linux commands have set syntax which allows you to pass extra _options_ and _arguments_. The syntax looks something like this:
-
->> _command_ [_options_] [_arguments_]
-
-Things you should pay attention to:
-
-* Separate commands, options, and arguments with spaces
-* Short command options start with `-`
-* Long command options start with `--`
-* The command reads from left to right so _options_ and _arguments_ refer to the command on the left
-* The type of _options_ available and _arguments_ accepted will depend on the command
-
-![Note icon](https://github.com/dl90/linux-basics/blob/gh-pages/docs/images/icons/note.png?raw=true "Note"){: style="float: left" }
-> **Note:** You can find the full information about a command by using the `man` command. The syntax is `man [command]`.
+* Ensure that each block statement is indented (ex. Everything inside function is indented once, everything inside an if statement is indented 1 level further)
+* Each opening paranthesis has a closing paranthesis
+* Each conditional statement is followed with a semicolon
+* Everything is typed correctly, without typos
 
 ---
 
@@ -55,6 +41,7 @@ Below is a list of some commands that will be needed to follow along with this d
 
 | Command         | Description                                                                                             |
 | :--------       | :------------------------------------------------------------------------------------------------------ |
+| `#`             | Any text after an octothorpe (pound symbol) will be a comment, therefore it will not be executed        |
 | `clear`         | "Clear" your terminal screen.                                                                           |
 | **[Enter]**     | Processes the command that has been typed                                                               |
 
@@ -69,92 +56,93 @@ One of the most common introduction problems that developers solve is determinin
 **1.** Open the Pycharm application by clicking the icon from the launchpad.
 
 ![img1](https://user-images.githubusercontent.com/90500768/161899986-b0b0c2b5-2736-41b2-9986-287a625c7551.png?raw=true "PyCharm")
-<!-- >![Terminal open](https://github.com/dl90/linux-basics/blob/gh-pages/docs/images/navigation/directories/term.png?raw=true "terminal") -->
 <br />
 <br />
 
-**2.** Input the following command into your terminal to display your current directory.
+**2.** Click “New Project” in the top right corner of the screen.
 
->```
->pwd
->```
-
->You should be able to see exactly which directory you are currently in.
-
->![Screen shot pwd](https://github.com/dl90/linux-basics/blob/gh-pages/docs/images/navigation/directories/pwd.png?raw=true "pwd")
+![img2](https://user-images.githubusercontent.com/90500768/161901139-48deb548-5d2e-462d-a249-3b3003eee5a2.png?raw=true "Creating New Project")
 <br />
 <br />
 
-**3.** Display the contents inside your current directory with the following command.
+**3.** Delete the highlighted section with “palinedromeProject” and confirm that the “create a main.py welcome script” is checked off.
+
+![img3_pt1](https://user-images.githubusercontent.com/90500768/161901437-1346111d-1d50-4d18-a2f1-8293cb180ddd.png?raw=true "Set uUp New Project")
+<br />
+![img3_pt2](https://user-images.githubusercontent.com/90500768/161901519-7a1887dc-b8b1-4d93-9f34-4bf6ad4b5eae.png?raw=true "Set Up New Project")
+<br />
+<br />
+
+**4.** Click “create” on the bottom right corner.
+
+![img4](https://user-images.githubusercontent.com/90500768/161901721-ddbae822-d61c-4c63-a136-70f91b710d20.png?raw=true "Create New Project")
+
+<br />
+<br />
+
+**5.** Highlight and delete the existing code to start coding from scratch.
+
+![img5_pt1](https://user-images.githubusercontent.com/90500768/161901865-3b5a37a9-3e38-4306-804c-221c7b697bb2.png?raw=true "Delete Existing Code")
+
+<br />
+>After you delete all the existing code you should have a blank file like the image below.
+<br />
+
+![img5_pt2](https://user-images.githubusercontent.com/90500768/161902193-181f557f-6e35-40dd-be20-3b4ff7dcf792.png?raw=true "Empty File")
+
+<br />
+<br />
+
+**6.** Type the following code.
 
 >![Note icon](https://github.com/dl90/linux-basics/blob/gh-pages/docs/images/icons/note.png?raw=true "Note"){: style="float: left" }
->> **Note**: Using the `ls` command with the `-a` switch lists all hidden files as well.
-
-<br />
->```
->ls
->```
-
->You can see a list of everything inside your current directory.
-
->![Screen shot ls](https://github.com/dl90/linux-basics/blob/gh-pages/docs/images/navigation/directories/contents.png?raw=true "ls")
-<br />
-<br />
-
-**4.** Create a new folder inside your current directory by using the following command.
-
->```
->mkdir testfolder
->```
-
->Check the contents of your current directory again by inputting the `ls` command again.
-
->```
->ls
->```
-
->You will see that you have successfully created a new folder called *`testfolder`*.
-
->![Screen shot ls with testfolder](https://github.com/dl90/linux-basics/blob/gh-pages/docs/images/navigation/directories/contents2.png?raw=true "ls")
-<br />
-<br />
-
-**5.** Change into the *`testfolder`* directory with the following command.
-
->![Note icon](https://github.com/dl90/linux-basics/blob/gh-pages/docs/images/icons/note.png?raw=true "Note"){: style="float: left" }
->>**Note**: The input after `cd` is the name of the directory you want to change into.
-
-<br />
->```
->cd testfolder
->```
-
->Check to see which directory you are now currently in with the `pwd` command.
-
->```
->pwd
->```
-
->You will see that you are now inside the *`testfolder`* directory.
-
->![pwd2](https://github.com/dl90/linux-basics/blob/gh-pages/docs/images/navigation/directories/pwd2.png?raw=true "ls")
-<br />
-<br />
-
-**6.** Change back to the previous directory with the following command.
-
->![Note icon](https://github.com/dl90/linux-basics/blob/gh-pages/docs/images/icons/note.png?raw=true "Note"){: style="float: left" }
->> **Note**: By adding `..`, you can jump back up one parent directory. Using `cd -` can also return you to your previous location, but you can only backtrack once.
+>> **Note**: Ensure that each block statement is indented (ex. Everything inside function is indented once, everything inside an if statement is indented 1 level further)
 <br />
 <br />
 
 >```
->cd ..
+>import sys  # allows us to use command line arguments
+
+
+def palindrome(word):
+    # checks to see if the provided string is an empty string
+    if len(word) == 0:
+        print("Please enter a non-empty string")
+        exit(0)
+
+    # Checks if the provided string is just one letter
+    if len(word) == 1:
+        return True
+
+    # checks the first and last index of the word (converts both letters to lowercase to avoid error)
+    if word[0].lower() == word[-1].lower():
+        # Recursively calls the function to make sure the first half of the string mirrors the second half of the string
+        return palindrome(word[1: -1])
+    # if the word is not a palindrome return false
+    else:
+        return False
+
+
+def main():
+    # takes the command line argument and stores it in the variable word
+    word = sys.argv[1]
+    # calls the function we created and stores the return time in a variable called isPalindrome
+    isPalindrome = palindrome(word)
+    # prints out the return value
+    print(isPalindrome)
+
+
+# Allows us to run the file only if it has been executed not imported
+if __name__ == "__main__":
+    main()
+
 >```
 
->You can see you have returned back to the previous directory that you were in.
+<br />
+<br />
 
->![Screen shot pwd](https://github.com/dl90/linux-basics/blob/gh-pages/docs/images/navigation/directories/pwd.png?raw=true "pwd")
+![img7](https://user-images.githubusercontent.com/90500768/161904702-c28a9bf6-6f68-476e-becc-9f5d6964727e.png?raw=true "Completed Code")
+
 <br />
 <br />
 

@@ -100,7 +100,7 @@ One of the most common introduction problems that developers solve is determinin
 <br />
 <br />
 
->```
+~~~
 >import sys  # allows us to use command line arguments
 
 
@@ -136,7 +136,7 @@ def main():
 if __name__ == "__main__":
     main()
 
->```
+~~~
 
 <br />
 <br />

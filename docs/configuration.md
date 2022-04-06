@@ -28,7 +28,7 @@ Python is capable of programming many tasks, but before we can create our own pr
 
 * Ensure that each block statement is indented (ex. Everything inside function is indented once, everything inside an if statement is indented 1 level further)
 * Each opening paranthesis has a closing paranthesis
-* Each conditional statement is followed with a colon
+* Each conditional statement and function header is followed with a colon
 * Everything is typed correctly, without typos
 
 ---

@@ -3,7 +3,7 @@ layout: default
 title: Creating and Pushing a Project to a GitHub Repository 
 nav_order: 4
 has_children: false
-permalink: /docs/navigating
+permalink: /docs/search
 ---
 
 {: .fs-6 .fw-300 }

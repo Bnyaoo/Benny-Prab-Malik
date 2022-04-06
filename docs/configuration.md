@@ -49,7 +49,7 @@ Below is a list of some commands that will be needed to follow along with this d
 
 ## Writing a Palindrome Function
 
-One of the most common introduction problems that developers solve is determining if a string is a palindrome or not. A palindrome is a word, phrase, or sequence that reads the same backward as forward.
+One of the most common introduction problems that developers solve is determining if a string is a palindrome or not. This section of the guide will take you step by step through the process of creating this function.
 
 ---
 

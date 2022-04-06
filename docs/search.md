@@ -89,10 +89,11 @@ Now that the project files have been committed and pushed, you will need to crea
 ![8](https://user-images.githubusercontent.com/18428358/161927434-591a32bb-9764-4b30-954c-458aaae5e1fd.png?raw=true)
 
 <br />
-A window will appear where you can give the repository a name, remote, and description.
 <br />
 
-**9.** Click the text box next to “Repository name” and set the name for this project.
+**9.** A window will appear where you can give the repository a name, remote, and description.
+
+Click the text box next to “Repository name” and set the name for this project.
 
 ![9](https://user-images.githubusercontent.com/18428358/161927676-c62bc0c7-c2e7-42fb-b52b-d05a2f235693.png?raw=true)
 

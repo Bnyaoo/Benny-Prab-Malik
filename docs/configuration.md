@@ -77,9 +77,6 @@ One of the most common introduction problems that developers solve is determinin
 
 ![img4](https://user-images.githubusercontent.com/90500768/161901721-ddbae822-d61c-4c63-a136-70f91b710d20.png?raw=true "Create New Project")
 
-<br />
-<br />
-
 **5.** Highlight and delete the existing code to start coding from scratch.
 
 ![img5_pt1](https://user-images.githubusercontent.com/90500768/161901865-3b5a37a9-3e38-4306-804c-221c7b697bb2.png?raw=true "Delete Existing Code")
@@ -148,18 +145,25 @@ if __name__ == "__main__":
 <br />
 
 **8.** Press the terminal button at the bottom of the screen.
+<br />
+<br />
 ![img8](https://user-images.githubusercontent.com/90500768/161905803-f880011b-0aab-439c-aac1-9284e71c95b8.png?raw=true "Open Terminal")
 
 <br />
 <br />
 
 **9.** Type the following command.
+<br />
 >![Note icon](https://github.com/dl90/linux-basics/blob/gh-pages/docs/images/icons/note.png?raw=true "Note"){: style="float: left" }
 >> **Note**: The string `bob` below can be replaced with any string of your choice.
+<br />
 <br />
 >```
 >python main.py bob
 >```
+
+<br />
+<br />
 ![img9](https://user-images.githubusercontent.com/90500768/161905959-bffa6619-36f1-4b1a-baab-d99158542d56.png?raw=true "Type Command")
 
 <br />

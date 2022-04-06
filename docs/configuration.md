@@ -96,7 +96,7 @@ One of the most common introduction problems that developers solve is determinin
 >> **Note**: Ensure that each block statement is indented (ex. Everything inside function is indented once, everything inside an if statement is indented 1 level further)
 <br />
 <br />
->
+
 ~~~
 import sys  # allows us to use command line arguments
 
@@ -134,7 +134,7 @@ if __name__ == "__main__":
     main()
 
 ~~~
->
+
 >The file should now look like the image below.
 <br />
 

@@ -55,37 +55,37 @@ One of the most common introduction problems that developers solve is determinin
 
 **1.** Open the Pycharm application by clicking the icon from the launchpad.
 
-![img1](https://user-images.githubusercontent.com/90500768/161899986-b0b0c2b5-2736-41b2-9986-287a625c7551.png?raw=true "PyCharm")
+>![img1](https://user-images.githubusercontent.com/90500768/161899986-b0b0c2b5-2736-41b2-9986-287a625c7551.png?raw=true "PyCharm")
 <br />
 <br />
 
 **2.** Click “New Project” in the top right corner of the screen.
 
-![img2](https://user-images.githubusercontent.com/90500768/161901139-48deb548-5d2e-462d-a249-3b3003eee5a2.png?raw=true "Creating New Project")
+>![img2](https://user-images.githubusercontent.com/90500768/161901139-48deb548-5d2e-462d-a249-3b3003eee5a2.png?raw=true "Creating New Project")
 <br />
 <br />
 
 **3.** Delete the highlighted section with “palinedromeProject” and confirm that the “create a main.py welcome script” is checked off.
 
-![img3_pt1](https://user-images.githubusercontent.com/90500768/161901437-1346111d-1d50-4d18-a2f1-8293cb180ddd.png?raw=true "Set uUp New Project")
+>![img3_pt1](https://user-images.githubusercontent.com/90500768/161901437-1346111d-1d50-4d18-a2f1-8293cb180ddd.png?raw=true "Set uUp New Project")
 <br />
-![img3_pt2](https://user-images.githubusercontent.com/90500768/161901519-7a1887dc-b8b1-4d93-9f34-4bf6ad4b5eae.png?raw=true "Set Up New Project")
+>![img3_pt2](https://user-images.githubusercontent.com/90500768/161901519-7a1887dc-b8b1-4d93-9f34-4bf6ad4b5eae.png?raw=true "Set Up New Project")
 <br />
 <br />
 
 **4.** Click “create” on the bottom right corner.
 
-![img4](https://user-images.githubusercontent.com/90500768/161901721-ddbae822-d61c-4c63-a136-70f91b710d20.png?raw=true "Create New Project")
+>![img4](https://user-images.githubusercontent.com/90500768/161901721-ddbae822-d61c-4c63-a136-70f91b710d20.png?raw=true "Create New Project")
 
 **5.** Highlight and delete the existing code to start coding from scratch.
 
-![img5_pt1](https://user-images.githubusercontent.com/90500768/161901865-3b5a37a9-3e38-4306-804c-221c7b697bb2.png?raw=true "Delete Existing Code")
+>![img5_pt1](https://user-images.githubusercontent.com/90500768/161901865-3b5a37a9-3e38-4306-804c-221c7b697bb2.png?raw=true "Delete Existing Code")
 
 <br />
 >After you delete all the existing code you should have a blank file like the image below.
 <br />
 
-![img5_pt2](https://user-images.githubusercontent.com/90500768/161902193-181f557f-6e35-40dd-be20-3b4ff7dcf792.png?raw=true "Empty File")
+>![img5_pt2](https://user-images.githubusercontent.com/90500768/161902193-181f557f-6e35-40dd-be20-3b4ff7dcf792.png?raw=true "Empty File")
 
 <br />
 <br />
@@ -139,7 +139,7 @@ if __name__ == "__main__":
 >The file should now look like the image below.
 <br />
 
-![img7](https://user-images.githubusercontent.com/90500768/161904702-c28a9bf6-6f68-476e-becc-9f5d6964727e.png?raw=true "Completed Code")
+>![img7](https://user-images.githubusercontent.com/90500768/161904702-c28a9bf6-6f68-476e-becc-9f5d6964727e.png?raw=true "Completed Code")
 
 <br />
 <br />
@@ -147,7 +147,7 @@ if __name__ == "__main__":
 **8.** Press the terminal button at the bottom of the screen.
 <br />
 <br />
-![img8](https://user-images.githubusercontent.com/90500768/161905803-f880011b-0aab-439c-aac1-9284e71c95b8.png?raw=true "Open Terminal")
+>![img8](https://user-images.githubusercontent.com/90500768/161905803-f880011b-0aab-439c-aac1-9284e71c95b8.png?raw=true "Open Terminal")
 
 <br />
 <br />
@@ -155,7 +155,9 @@ if __name__ == "__main__":
 **9.** Type the following command.
 <br />
 >![Note icon](https://github.com/dl90/linux-basics/blob/gh-pages/docs/images/icons/note.png?raw=true "Note"){: style="float: left" }
+><br />
 >> **Note**: The string `bob` below can be replaced with any string of your choice.
+<br />
 <br />
 <br />
 >```
@@ -164,7 +166,7 @@ if __name__ == "__main__":
 
 <br />
 <br />
-![img9](https://user-images.githubusercontent.com/90500768/161905959-bffa6619-36f1-4b1a-baab-d99158542d56.png?raw=true "Type Command")
+>![img9](https://user-images.githubusercontent.com/90500768/161905959-bffa6619-36f1-4b1a-baab-d99158542d56.png?raw=true "Type Command")
 
 <br />
 <br />
@@ -172,7 +174,8 @@ if __name__ == "__main__":
 **10.** Press the [enter] key to run the command
 >The command in step 9 should return true like the image below.
 <br />
-![img10](https://user-images.githubusercontent.com/90500768/161906102-82d40917-c91a-414d-a070-4cdcf2a70ab9.png?raw=true "Enter Command")
+<br />
+>![img10](https://user-images.githubusercontent.com/90500768/161906102-82d40917-c91a-414d-a070-4cdcf2a70ab9.png?raw=true "Enter Command")
 
 <br />
 <br />

@@ -2,123 +2,125 @@
 layout: default
 title: Writing a unittest
 nav_order: 3
+has_children: false
+permalink: /docs/customization
 ---
 
-# Customization
+{: .fs-6 .fw-300 }
+
+# Writing a Unit Test 
 {: .no_toc }
 
-## Table of contents
-{: .no_toc .text-delta }
+---
 
-1. TOC
+After learning the basics of writing a function and running the file from the command line, we want to test the function to help you find and fix any bugs that may be in the code. We will be unit testing the palindrome program that you wrote on the previous page to make sure that the program is working as intended. Unit testing is very important because it helps developers write better code more efficiently. 
+
+---
+
+### Table of contents
+{: .no_toc .text-delta }
+* TOC
 {:toc}
 
 ---
 
-## Color schemes
+## Writing a Unit Test for a Palindrome Function
 
-{: .d-inline-block }
+Unit testing is a technique in which particular module is tested to check by developer himself whether there are any errors. The primary focus of unit testing is test an individual unit of system to analyze, detect, and fix the errors. In this section you will be creating a unit test for the palindrome created in the previous section.
 
-New
-{: .label .label-green }
+---
 
-Just the Docs supports two color schemes: light (default), and dark.
+**1.** On your main python file that contains the palindrome function, right-click on your mouse and click “Generate”.
 
-To enable a color scheme, set the `color_scheme` parameter in your site's `_config.yml` file:
+![1](https://user-images.githubusercontent.com/18428358/161939376-e2bb3191-e70e-4395-b59a-6fb71230c662.png?raw=true)
 
-#### Example
-{: .no_toc }
+<br />
+<br />
 
-```yaml
-# Color scheme supports "light" (default) and "dark"
-color_scheme: dark
-```
+**2.** Click on “Tests…” and Pycharm will show you the available methods that can be tested.
 
-<button class="btn js-toggle-dark-mode">Preview dark color scheme</button>
+![2](https://user-images.githubusercontent.com/18428358/161939618-60558062-ed5c-42e4-bc25-c2a5085ca7c1.png?raw=true)
 
-<script>
-const toggleDarkMode = document.querySelector('.js-toggle-dark-mode');
+<br />
+<br />
 
-jtd.addEvent(toggleDarkMode, 'click', function(){
-  if (jtd.getTheme() === 'dark') {
-    jtd.setTheme('light');
-    toggleDarkMode.textContent = 'Preview dark color scheme';
-  } else {
-    jtd.setTheme('dark');
-    toggleDarkMode.textContent = 'Return to the light side';
-  }
-});
-</script>
+**3.** Name the Test file and Test class as shown below, don’t forget to select the function that we will be testing by clicking the checkbox next to your desired test function. 
 
-## Custom schemes
+![3](https://user-images.githubusercontent.com/18428358/161940229-4772a175-9f35-4671-8e0d-8c7040e0f745.png?raw=true)
 
-### Define a custom scheme
+<br />
+<br />
 
-You can add custom schemes.
-If you want to add a scheme named `foo` (can be any name) just add a file `_sass/color_schemes/foo.scss` (replace `foo` by your scheme name)
-where you override theme variables to change colors, fonts, spacing, etc.
+**4.** Click “OK” when you are ready to proceed. 
 
-Available variables are listed in the [\_variables.scss](https://github.com/just-the-docs/just-the-docs/tree/main/_sass/support/_variables.scss) file.
+![4](https://user-images.githubusercontent.com/18428358/161940647-46c14c4e-cb9c-45cd-a8d9-dc89994568e5.png?raw=true)
 
-For example, to change the link color from the purple default to blue, include the following inside your scheme file:
+<br />
+<br />
 
-#### Example
-{: .no_toc }
+**5.** After clicking “OK”, Pycharm will create a new .py file where we can test our palindrome function. 
 
-```scss
-$link-color: $blue-000;
-```
+![5](https://user-images.githubusercontent.com/18428358/161940828-542749aa-6e72-4895-af7f-eca1702ecec3.png?raw=true)
 
-_Note:_ Editing the variables directly in `_sass/support/variables.scss` is not recommended and can cause other dependencies to fail.
-Please use scheme files.
+<br />
+<br />
 
-### Use a custom scheme
+**6.** Add this line of code on line number 2 which will be grayed out upon writing it down, for now.
 
-To use the custom color scheme, only set the `color_scheme` parameter in your site's `_config.yml` file:
+>from main import palindrome as palindrome
 
-```yaml
-color_scheme: foo
-```
+This line of code is calling the palindrome function from main.py.
 
-### Switchable custom scheme
+![6](https://user-images.githubusercontent.com/18428358/161941225-33a89221-8e25-44c2-b682-d19fa1d242db.png?raw=true)
 
-If you want to be able to change the scheme dynamically, for example via javascript, just add a file `assets/css/just-the-docs-foo.scss` (replace `foo` by your scheme name)
-with the following content:
+<br />
+<br />
 
-{% raw %}
-    ---
-    ---
-    {% include css/just-the-docs.scss.liquid color_scheme="foo" %}
-{% endraw %}
+**7.** Delete lines 6 and 7 as we will be making our own unit tests. 
 
-This allows you to switch the scheme via the following javascript.
+![7](https://user-images.githubusercontent.com/18428358/161941664-56db6352-e051-47d6-94e4-f01fb7978a65.png?raw=true)
 
-```js
-jtd.setTheme("foo")
-```
+<br />
+<br />
 
-## Override and completely custom styles
+**8.** Type the following blocks of code starting at line 6.
 
-For styles that aren't defined as variables, you may want to modify specific CSS classes.
-Additionally, you may want to add completely custom CSS specific to your content.
-To do this, put your styles in the file `_sass/custom/custom.scss`.
-This will allow for all overrides to be kept in a single file, and for any upstream changes to still be applied.
+>def test_palindrome_with_all_lower_case(self):
+        expected = True
+        actual = palindrome("civic")
+        self.assertEqual(expected, actual)
 
-For example, if you'd like to add your own styles for printing a page, you could add the following styles.
+    def test_palindrome_with_same_letters_but_different_cases(self):
+        expected = True
+        actual = palindrome("Civic")
+        self.assertEqual(expected, actual)
 
-#### Example
-{: .no_toc }
+    def test_palindrome_with_input_that_is_not_a_palindrome(self):
+        expected = False
+        actual = palindrome("abc")
+        self.assertEqual(expected, actual)
+        
+After adding these lines of code, the whole testing file should look like the image provided below.
 
-```scss
-// Print-only styles.
-@media print {
-  .side-bar,
-  .page-header {
-    display: none;
-  }
-  .main-content {
-    max-width: auto;
-    margin: 1em;
-  }
-}
-```
+![8](https://user-images.githubusercontent.com/18428358/161942196-25f598df-5d08-4647-a8cf-c55841ba64c8.png?raw=true)
+
+<br />
+<br />
+
+**9.** To check if the function are working properly, right click next to your code and select, “Run ‘Python tests for tes…’ ”. 
+
+![9](https://user-images.githubusercontent.com/18428358/161943842-93177f0f-9f43-415f-b7dd-df57fa24bcef.png?raw=true)
+
+<br />
+<br />
+
+**10.** If done correctly all 3 tests should pass and green checkmarks will appear at the bottom of PyCharm to indicate our function is working properly. 
+
+![10](https://user-images.githubusercontent.com/18428358/161944517-395a072f-63cc-447a-8148-aa4aa28f2e63.png?raw=true)
+
+<br />
+<br />
+
+Congratulations you have passed all the tests. There are more ways you can test out your functions which you can explore yourself. 
+
+Now the next step is creating and pushing a project to a Github Repository.

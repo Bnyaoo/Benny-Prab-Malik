@@ -65,7 +65,7 @@ heading_anchors: true
 # Aux links for the upper right navigation
 aux_links:
   "Python Basics on GitHub":
-    - "//https://github.com/Bnyaoo/Benny-Prab-Malik"
+    - "https://github.com/Bnyaoo/Benny-Prab-Malik"
 
 # Makes Aux links open in a new tab. Default is false
 aux_links_new_tab: false

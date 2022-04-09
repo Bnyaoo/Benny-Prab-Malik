@@ -30,14 +30,17 @@ Unit testing is a technique in which particular module is tested to check by dev
 
 ---
 
-**1.** On your main python file that contains the palindrome function, right-click on your mouse and click “Generate”.
+**1.** Right click the palindrome function header in the PyCharm IDE, then select “Generate”.
 
+
+![unittest](https://user-images.githubusercontent.com/90500768/162565863-69829283-b4d0-4d3d-a410-a86bd46e2962.png?raw=true)
+<br />
 ![1](https://user-images.githubusercontent.com/18428358/161939376-e2bb3191-e70e-4395-b59a-6fb71230c662.png?raw=true)
 
 <br />
 <br />
 
-**2.** Click on “Tests…” and Pycharm will show you the available methods that can be tested.
+**2.** Click on “Tests…” and PyCharm will show you the available methods that can be tested.
 
 ![2](https://user-images.githubusercontent.com/18428358/161939618-60558062-ed5c-42e4-bc25-c2a5085ca7c1.png?raw=true)
 

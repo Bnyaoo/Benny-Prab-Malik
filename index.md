@@ -13,7 +13,7 @@ permalink: /
 
 ---
 
-This document will walk you through how to use JetBrains' Pycharm integrated development environment (IDE) to write and test code in Python.
+This document will walk you through how to use JetBrains' PyCharm integrated development environment (IDE) to write and test code in Python.
 
 We will also show you how to push your code to a GitHub repository to allow others to view and collaborate with your project.
 
@@ -30,7 +30,7 @@ We will also show you how to push your code to a GitHub repository to allow othe
 
 This document is intended for intermediate developers who already have a basic understanding of programming (even if it is in a language other than python). These users should know the following:
 
-* how to install Pycharm,
+* how to install PyCharm,
 * understand how to identify all the disjointed equivalencies for a function and,
 * basic understanding of GitHub
 

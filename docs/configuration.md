@@ -167,7 +167,7 @@ if __name__ == "__main__":
 <br />
 <br />
 
-**10.** Press the [enter] key to run the command
+**10.** Press the **[enter]** key to run the command
 >The command in step 9 should return true like the image below.
 <br />
 <br />

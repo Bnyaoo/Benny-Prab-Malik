@@ -13,7 +13,7 @@ permalink: /
 
 ---
 
-This document will walk you through how to write and test code in Python, using Pycharm, an integrated development environment created by JetBrains. 
+This document will walk you through how to use JetBrains' Pycharm integrated development environment (IDE) to write and test code in Python.
 
 We will also show you how to push your code to a GitHub repository to allow others to view and collaborate with your project.
 

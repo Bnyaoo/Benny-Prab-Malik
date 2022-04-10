@@ -12,10 +12,10 @@ permalink: /docs/glossary
 **Assertion**: An assertion is used in automated testing to assert the expected behavior of the test, commonly used in Unit testing.
 <br />
 <br />
-**Bug**: A generic description for any issue with a piece of software that stops it from functioning as intended.
-<br />
-<br />
 **Block Statement**: A block statement is a lexical structure of source code which is grouped together.
+<br />
+<br />
+**Bug**: A generic description for any issue with a piece of software that stops it from functioning as intended.
 <br />
 <br />
 **Command Line**: A text-based user interface that interacts with the computer.

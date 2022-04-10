@@ -9,7 +9,9 @@ permalink: /docs/glossary
 # Glossary
 
 ---
-
+**Bug**: A generic description for any issue with a piece of software that stops it from functioning as intended.
+<br />
+<br />
 **Block Statement**: A block statement is a lexical structure of source code which is grouped together.
 <br />
 <br />

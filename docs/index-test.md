@@ -39,6 +39,9 @@ permalink: /docs/glossary
 **Function Header**: The very first line of a function that declares the name and parameters of the function.
 <br />
 <br />
+**GitHub**: A Git repository hosting service.
+<br />
+<br />
 **Integrated Development Environment (IDE)**: A software that is used to build applications that combines common developer tools into a single graphical user interface (GUI).
 <br />
 <br />

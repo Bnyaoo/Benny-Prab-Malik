@@ -120,6 +120,11 @@ Click the “Share” button when you’re ready to upload your project.
 
 Congratulations! Your project is now deployed and accessible through GitHub.
 
+After following this user manual you should be comfortable creating a simple program, generating its unit tests, as well as creating a GitHub repository where other developers can collaborate with you on your project.
+
+Refer to the Troubleshooting guide in case errors arise, and the glossary for a list of terms used in this manual with accompanying definitions.
+
+This concludes the user manual. 
 
 
 
